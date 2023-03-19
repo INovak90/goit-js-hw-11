@@ -1,3 +1,4 @@
+import refs from './refs';
 export default function renderImageCard(array) {
   const markup = array
     .map(
