@@ -9,7 +9,7 @@ import NewsApiService from './service';
 const { searchForm, gallery, loadMore } = refs;
 const newsApiService = new NewsApiService();
 
-refs.searchForm.addEventListener('submit', onFormSubmit);
+searchForm.addEventListener('submit', onFormSubmit);
 loadMore.addEventListener('click', onClickLoadMore);
 
 async function onFormSubmit(e) {
@@ -83,4 +83,3 @@ function hideLoadMore() {
 function showLoadMore() {
   loadMore.classList.remove('is-hidden');
 }
-
